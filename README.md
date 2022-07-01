@@ -7,7 +7,7 @@
 
 ### Ver Proyecto:
 
-[URL:](https://buscador-de-musica.netlify.app/)
+[URL: buscador de canciones](https://buscador-de-musica.netlify.app/)
 
 ###### Las apis usadas son:
 
