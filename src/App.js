@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import SongSearch from "./components/SongSearch.js";
+import Footer from './components/Footer.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <>
+        <div className="app__topCircle"></div>
+        
+        <div className="app__title">
+          <div className="app__middleCircle-border">
+            <div className="app__middleCircle">
+              
+            </div>
+          </div>
+            <h2>Buscador de Letras de Canciones</h2>
+            <h4>Escribe el nombre y canción de tu artista favorito</h4>
+        </div>
+        <div>
+          <SongSearch/>
+        </div>
+        <div className="app__bottomCircle"></div>
+        <Footer />
+      </>
     </div>
   );
 }

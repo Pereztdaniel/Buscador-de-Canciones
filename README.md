@@ -1,70 +1,37 @@
-# Getting Started with Create React App
+# Buscador de Canciones y Artistas
+### Proyecto Práctico desarrollado en ReactJs
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+###### Este Proyecto consiste en hacer una búsqueda de algún Artista y canción para  mostrarlo en pantalla. Al hacer un llamado a una API gratuita, esta trae datos que la persona puede conocer acerca del artista y canción que se busque.
 
-## Available Scripts
+![Diseño de la aplicación para dispositivos Grandes](./src/capture.png)
 
-In the project directory, you can run:
+### Ver Proyecto:
 
-### `npm start`
+[URL:](https://buscador-de-musica.netlify.app/)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+###### Las apis usadas son:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* _theaudiodb_ 
 
-### `npm test`
+- Para Traer datos del Artista como:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
++ Imagen del artista buscado
++ Nombre
++ Año de nacimiento
++ País
++ Genero musical
++ Sitio Web del artista
++ Biografía, esta se muestra en una ventana Modal
 
-### `npm run build`
+* _genius_
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Para traer datos de la canción como:
+ 
++ Título de Canción
++ Foto del visualizer de la canción
++ Fecha de Lanzamiento
++ Sitio Web donde pueden ver la letra de la canción
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+###### El objetivo de esta aplicación práctica es para hacer uso de _fetch_
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+###### También se creo un archivo llamado helpHTTP, el objetivo de este archivo es conocer la lógica de fetch y poder reusarlo con diferentes apis.
